@@ -7,12 +7,11 @@ b = [2 2 3 3 3];
 %compute convolution
 res = my_conv(a,b);
 c = conv(a, b);
-d = xcorr(a, b);
 e = my_conv_usingfft(a, b);
 
-
-b = flip(b);
 %compute corss correlation
+d = xcorr(a, b);
+b = flip(b);
 f = my_conv_usingfft(a,b);
 g = my_conv(a, b);
 
