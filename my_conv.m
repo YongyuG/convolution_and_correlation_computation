@@ -6,7 +6,7 @@ N = aLen + bLen - 1;           %lenth of convolution results must be aLen + bLen
 bSignal = [bSignal  zeros(1, aLen - 1)]; 
 bSignal = flip(bSignal);%flip the signal
 
-aBuffer = [aSignal zeros(1, aLen - 1)];
+aBuffer = [aSignal zeros(1, bLen - 1)];
 bBuffer = zeros(1, length(aBuffer));
 convRes = zeros(1, N);
 
